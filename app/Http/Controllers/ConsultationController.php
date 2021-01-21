@@ -31,7 +31,8 @@ class ConsultationController extends Controller
     		$response['response'] = false;
 
     	}
-    	
+
+    	return $response;
     }
 
     public function list_consulting(Request $request){

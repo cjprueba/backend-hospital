@@ -30,7 +30,6 @@ class UserController extends Controller
 
     		$insert['name'] = $request['name'];
     		$insert['email'] = $request['email'];
-    		$insert['password'] = $request['password'];
     		$insert['address'] = $request['address'];
     		$insert['phone'] = $request['phone'];
     		$insert['age'] = $request['age'];
@@ -56,6 +55,8 @@ class UserController extends Controller
     		$response['response'] = false;
 
     	}
+
+        return $response;
 
     }
 
